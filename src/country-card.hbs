@@ -1,13 +1,14 @@
 <div class='card-body'>
-  <svg class={{flags.svg}}></svg>
+
+  <img src='{{flags.svg}}' width='200' />
   <h1 class='card-title'>{{name.official}}</h1>
   <p class='card-text'>Capital:{{capital}}</p>
   <p class='card-text'>Population:{{population}}</p>
 
-  <p class='card-text'>Languages:{{languages}}</p>
-   {{#each languages}}
-  <ul class="list-group">
-      <li class="list-group-item">{{}}</li>
-  </ul>
+  <p class='card-text'>Languages:</p>
+  {{#each languages}}
+    <ul class='list-group'>
+      <li class='list-group-item'>{{this}}</li>
+    </ul>
   {{/each}}
 </div>
